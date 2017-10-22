@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        {% if color == '' %}
+            <img src="{{ url_for('static', filename='Ninjas/tmnt.png') }}">
+        {% elif color == 'blue' %}
+            <img src="{{ url_for('static', filename='Ninjas/leonardo.jpg') }}">
+        {% elif color == 'orange' %}
+            <img src="{{ url_for('static', filename='Ninjas/michelangelo.jpg') }}">
+        {% elif color == 'red' %}
+            <img src="{{ url_for('static', filename='Ninjas/raphael.jpg') }}">
+        {% elif color == 'purple' %}
+            <img src="{{ url_for('static', filename='Ninjas/donatello.jpg') }}">
+        {% else %}
+            <img src="{{ url_for('static', filename='Ninjas/notapril.jpg') }}">
+        {% endif %}    
+                  
+    </body>
+</html>
